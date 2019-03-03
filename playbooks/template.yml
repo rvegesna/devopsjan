@@ -1,0 +1,7 @@
+---
+- hosts: webserver
+  remote_user: test
+  become: yes
+  tasks:
+     - name: create index.html file
+       template: src=abc.j2  dest=/etc/abc

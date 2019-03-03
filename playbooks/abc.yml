@@ -1,0 +1,4 @@
+---
+- pkg1: curl
+- pkg10: telnet
+- pkg8: ppp
