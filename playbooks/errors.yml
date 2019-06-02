@@ -6,6 +6,7 @@
      - name: install httpd
        yum: name=httpd1 state=installed
        ignore_errors: true
+     # be cautious while doing this change
      - name: create index.html file
        copy: src=index.html  dest=/var/www/html
      - name: start httpd service
